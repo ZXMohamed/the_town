@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    html
+    {
+        height: 100%;
+    }
+    body
+    {
+        margin: 0px;background-image: url("../Capture.PNG");overflow: hidden;
+    }
+    @font-face
+{        
+    font-family:"Font Awesome 5 Free";
+    font-style:normal;
+    src:url(fonts/fa-solid-900.eot);
+    src:url(fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),
+    url(fonts/fa-solid-900.woff2) format("woff2"),
+    url(fonts/fa-solid-900.woff) format("woff"),
+    url(fonts/fa-solid-900.ttf) format("truetype"),
+    url(fonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+
+/*---------------------------------------------------------*/
+.viewercontainer a,
+.viewercontainer a:link,
+.viewercontainer a:visited
+{
+    color: rgb(185, 185, 185);
+    text-decoration: none;
+}
+.viewercontainer a:hover,
+.viewercontainer a:active
+{
+    color: white;
+}
+
+    .viewercontainer
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.76);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        font-family:"Font Awesome 5 Free";
+        cursor: zoom-out;
+    }
+    .side
+    {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .pre::before
+    {
+        content: "\f0d9";
+        font-size: 40px;
+        position: absolute;
+        left: 30px;
+    }
+    .nex::before
+    {
+        content: "\f0da";
+        font-size: 40px;
+        position: absolute;
+        right: 30px;
+    }
+    .viewercontent
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 100%;
+    }
+    .imgcontainer
+    {
+        cursor: pointer;
+    }
+    .counter
+    {
+        margin-top: 5px;
+        float: right;
+        font-size: 12px;
+        color: rgb(185, 185, 185);
+    }
+    .closebutton
+    {
+        float: right;
+        margin-bottom: 10px;
+        cursor: zoom-out;
+    }
+    .closebutton::before
+    {
+        content: "\f00d";
+        font-size: 18px;
+        cursor: zoom-out;
+    }
+    .viewercontainer:target
+    {
+        display: flex;
+    }
+</style>
+<body>
+    <div class="viewercontainer" id="1">
+        <div class="side"><a href="#8" class="pre"></a></div>
+        <div class="viewercontent">
+        <div>
+            <a href="#end" id="end" class="closebutton"></a>
+            <div class="imgcontainer">
+                <a href="#2">
+                <img src="photo/slider/gallery-img-01.jpg" alt="please waite while loading this photo">
+                </a>
+            </div>
+            <div class="counter">1 of 8</div>
+        </div>
+        </div>
+         <div class="side"><a href="#2" class="nex"></a></div>
+    </div>
+
+<!------------------------------------------------------>
+    <div class="viewercontainer" id="2">
+        <div class="side"><a href="#1" class="pre"></a></div>
+        <div class="viewercontent">
+        <div>
+            <a href="#end" id="end" class="closebutton"></a>
+            <div>
+                <a href="#3">
+                <img src="photo/slider/gallery-img-02.jpg" alt="please waite while loading this photo">
+                </a>
+            </div>
+            <div class="counter">2 of 8</div>
+        </div>
+        </div>
+         <div class="side"><a href="#3" class="nex"></a></div>
+    </div>
+
+<!------------------------------------------------------>
+    <div class="viewercontainer" id="3">
+        <div class="side"><a href="#2" class="pre"></a></div>
+        <div class="viewercontent">
+        <div>
+            <a href="#end" id="end" class="closebutton"></a>
+            <div>
+                <a href="#4">
+                <img src="photo/slider/gallery-img-03.jpg" alt="please waite while loading this photo"></div>
+                </a>
+            <div class="counter">3 of 8</div>
+        </div>
+        </div>
+         <div class="side"><a href="#4" class="nex"></a></div>
+    </div>
+
+<!------------------------------------------------------>
+    <div class="viewercontainer" id="4">
+        <div class="side"><a href="#3" class="pre"></a></div>
+        <div class="viewercontent">
+        <div>
+            <a href="#end" id="end" class="closebutton"></a>
+            <div>
+                <a href="#5">
+                <img src="photo/slider/gallery-img-04.jpg" alt="please waite while loading this photo"></div>
+                </a>
+            <div class="counter">4 of 8</div>
+        </div>
+        </div>
+         <div class="side"><a href="#5" class="nex"></a></div>
+    </div>
+
+<!------------------------------------------------------>
+    <div class="viewercontainer" id="5">
+        <div class="side"><a href="#4" class="pre"></a></div>
+        <div class="viewercontent">
+        <div>
+            <a href="#end" id="end" class="closebutton"></a>
+            <div>
+                <a href="#6">
+                <img src="photo/slider/gallery-img-05.jpg" alt="please waite while loading this photo"></div>
+                </a>
+            <div class="counter">5 of 8</div>
+        </div>
+        </div>
+         <div class="side"><a href="#6" class="nex"></a></div>
+    </div>
+
+<!------------------------------------------------------>
+    <div class="viewercontainer" id="6">
+        <div class="side"><a href="#5" class="pre"></a></div>
+        <div class="viewercontent">
+        <div>
+            <a href="#end" id="end" class="closebutton"></a>
+            <div>
+                <a href="#7">
+                <img src="photo/slider/gallery-img-06.jpg" alt="please waite while loading this photo"></div>
+                </a>
+            <div class="counter">6 of 8</div>
+        </div>
+        </div>
+         <div class="side"><a href="#7" class="nex"></a></div>
+    </div>
+
+<!------------------------------------------------------>
+    <div class="viewercontainer" id="7">
+        <div class="side"><a href="#6" class="pre"></a></div>
+        <div class="viewercontent">
+        <div>
+            <a href="#end" id="end" class="closebutton"></a>
+            <div>
+                <a href="#8">
+                <img src="photo/slider/gallery-img-01.jpg" alt="please waite while loading this photo"></div>
+                </a>
+            <div class="counter">7 of 8</div>
+        </div>
+        </div>
+         <div class="side"><a href="#8" class="nex"></a></div>
+    </div>
+
+<!------------------------------------------------------>
+    <div class="viewercontainer" id="8">
+        <div class="side"><a href="#7" class="pre"></a></div>
+        <div class="viewercontent">
+        <div>
+            <a href="#end" id="end" class="closebutton"></a>
+            <div>
+                <a href="#1">
+                <img src="photo/slider/gallery-img-02.jpg" alt="please waite while loading this photo"></div>
+                </a>
+            <div class="counter">8 of 8</div>
+        </div>
+        </div>
+         <div class="side"><a href="#1" class="nex"></a></div>
+    </div>
+</body>
+</html>
